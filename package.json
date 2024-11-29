@@ -1,0 +1,29 @@
+{
+  "name": "rn4oh",
+  "version": "1.0.0",
+  "description": "CLI tool for RN4OH project initialization",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "bin": {
+    "rn4oh": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "publish:patch": "npm version patch && npm publish",
+    "publish:minor": "npm version minor && npm publish",
+    "publish:major": "npm version major && npm publish"
+  },
+  "dependencies": {
+    "commander": "^9.4.0",
+    "simple-git": "^3.15.0",
+    "ora": "^5.4.1",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "typescript": "^4.8.4"
+  }
+} 
