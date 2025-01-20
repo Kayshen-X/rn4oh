@@ -7,7 +7,7 @@ import fs from 'fs';
 import ora from 'ora';
 import chalk from 'chalk';
 
-const REPO_URL = 'git@github.com:Kayshen-X/rn4oh-template.git';
+const REPO_URL = 'https://github.com/Kayshen-X/rn4oh-template.git';
 const packageJson = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json'), 'utf8'));
 const VERSION = packageJson.version;
 
